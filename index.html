@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Explorer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <!-- Logo on the left -->
+        <img src="./assets/LOGO.png" id="logo" alt="Logo">
+    </nav>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to SNAP DISH</h1>
+        <p> <b>Explore a variety of delicious meals <br> your go-to hub for delicious recipes! Whether you're a kitchen pro or just starting out,<br> we've got you covered with a diverse range of easy-to-follow recipes. <br>Let's embark on a culinary adventure together and make every meal a masterpiece!
+        </b></p>
+        <div id="searchBar">
+            <input type="text" placeholder="Search for a meal category" id="categoryInput">
+            <button id="searchbtn" onclick="searchCategories()"> <img id="searchimg" src="https://cdn-icons-png.flaticon.com/128/3031/3031293.png" alt=""> </button>
+        </div>
+    </header>
+
+    <!-- Random Meal Section -->
+    <div id="randomMeal">
+        <h2>Random Meal</h2>
+        <img src="placeholder.jpg" alt="Random Meal Image" id="randomMealImage">
+        <p id="randomMealName">Meal Name</p>
+    </div>
+
+    <!-- Searched Meal Categories Section -->
+    <div id="searchedCategories">
+        <h2>Searched Meal Categories</h2>
+        <ul id="searchedCategoriesList"></ul>
+    </div>
+    <div id="mealModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Meal Details</h2>
+            <div id="modalIngredientsList"></div>
+            <h3>Recipe</h3>
+            <ul id="modalRecipeList"></ul>
+        </div>
+    </div>
+
+    <!-- Meal Details Section -->
+    <div id="mealDetails">
+        <h2>Meal Details</h2>
+        <h3>Ingredients</h3>
+        <ul id="ingredientsList"></ul>
+        <h3>Recipe</h3>
+        <ul id="recipe"></ul>
+    </div>
+
+    <!-- All Meal Categories Section -->
+    <div id="allCategories">
+        <h2>All Meal Categories</h2>
+        <ul id="allCategoriesList"></ul>
+    </div>
+
+    <!-- Recent Searches Section -->
+    <div id="recentSearches">
+        <h2>Recent Searches</h2>
+        <ul id="recentSearchesList"></ul>
+    </div>
+   <div id="footer"> 
+    <!--Footer-->
+    <footer>
+        <p>This site belongs to Daniel Supreeth🍴</p>
+    </footer>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+

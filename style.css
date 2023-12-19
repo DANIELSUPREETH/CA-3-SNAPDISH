@@ -1,0 +1,230 @@
+/* General styling for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Styling for the header section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for various sections like searchBar, randomMeal, etc. */
+#searchBar, #randomMeal, #searchedCategories, #allCategories, #recentSearches {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styling for the footer section */
+#footer {
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+    justify-content: center;
+    background-color: #333;
+    height: 70px;
+}
+
+/* Styling for the category input field */
+#categoryInput {
+    height: 30px;
+    width: 500px;
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+/* Styling for the search button */
+#searchbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling for the search icon image */
+#searchimg {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Styling for images in the page */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Styling for unordered lists */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for the modal content */
+.modal-content {
+    background-color: #4CAF50; /* Green theme */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Adjust the width as needed */
+    text-align: center; /* Center the content */
+    border-radius: 8px;
+    position: relative; /* Needed for absolute positioning of close button */
+    color: white; /* Text color */
+}
+
+/* Styling for modal ingredients list */
+#modalIngredientsList {
+    text-align: left; /* Align the text to the left within the modal */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+/* Styling for close button in the modal */
+.close {
+    color: white; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styling for hover and transition effect on list items */
+li {
+    margin: 10px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #45a049;
+}
+
+/* Additional styles for the meal details section */
+#mealDetails {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: rgb(64, 64, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+/* Styling for navigation text */
+.nav-text {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Styling for the 'about' section */
+#about {
+    padding-left: 970px;
+}
+
+/* Styling for the logo */
+#logo {
+    height: 80px;
+}
+
+/* Styling for the list of all categories */
+#allCategoriesList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+/* Styling for each category row */
+.category-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Styling for each category list item in a row */
+.category-row li {
+    flex-basis: 30%;
+    box-sizing: border-box;
+}
+
+/* Styling for the random meal image */
+#randomMealImage {
+    height: 250px;
+}
+
+/* Styling for meal images in a row */
+.meal-image { 
+    height: 120px; /* Adjust the height as needed */
+    padding: 20px; /* Add margin for spacing */
+}
+
+/* Styling for a row of list items */
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Styling for list items in a row */
+.row li {
+    flex-basis: 30%;
+    box-sizing: border-box;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    #categoryInput {
+        width: 100%; /* Take full width on smaller screens */
+        max-width: none; /* Remove max-width on smaller screens */
+    }
+
+    .modal-content {
+        width: 90%; /* Adjust the width as needed on smaller screens */
+    }
+}
